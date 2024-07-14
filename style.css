@@ -1,0 +1,261 @@
+:root {
+    --dark-background-nav-footer: #1F2937;
+    --header-text-color: #F9FAF8;
+    --link-secondary-text-color: #E5E7EB;
+    --button-color-action-background: #3883F6;
+    --information-title-color: #1F2937;
+    --quote-background: #E5E7EB;
+    --quote-text-color: #1F2937;
+    --header-font: 48px;
+    --link-secondary-font: 18px;
+    --information-title-font: 36px;
+    --quote-text-font: 36px;
+    --header-weight: 900;
+    --information-title-weight: 900;
+    --quote-text-weight:  italic;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* nav style */
+
+nav {
+    background: var(--dark-background-nav-footer);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+
+}
+
+.logo {
+    margin-left: 10%;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-right: 18.5%;
+}
+
+.home a {
+    color: var(--link-secondary-text-color);
+    font-size: var(--link-secondary-font);
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* section website-information style */
+
+.website-information header {
+    background: var(--dark-background-nav-footer);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.information {
+    margin-left: 13.5%;
+}
+
+
+.information h1 {
+    color: var(--header-text-color);
+    font-size: var(--header-font);
+    font-weight: var(--header-weight);
+}
+
+.information h1 span {
+    color: var(--button-color-action-background);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.information p {
+    color: var(--link-secondary-text-color);
+}
+
+.information button {
+    background: var(--button-color-action-background);
+    color: var(--link-secondary-text-color);
+    border-radius: 10%;
+    border: var(--button-color-action-background);
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.image-information {
+    margin-right: 12%;
+}
+
+.image-information figure img {
+    width: 400px;
+    height: 200px;
+    border-radius: 8%;
+    border: 0.5px solid var(--button-color-action-background);
+}
+
+.image-information figure figcaption {
+    color: var(--link-secondary-text-color);
+    text-align: center;
+}
+
+/* section random-information style */
+
+.random-information {
+    display: block;
+}
+
+.random-information h2 {
+    color: var(--information-title-color);
+    font-size: var(--information-title-font);
+    font-weight: var(--information-title-weight);
+    text-align: center;
+}
+
+.random-information .image-illustration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.first-illustration img {
+    width: 180px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid var(--button-color-action-background);
+}
+
+.second-illustration img {
+    width: 180px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid var(--button-color-action-background);
+}
+
+.third-illustration img {
+    width: 180px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid var(--button-color-action-background);
+}
+
+.fourth-illustration img {
+    width: 180px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid var(--button-color-action-background);
+}
+
+.random-information .image-illustration .first-illustration figure figcaption {
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.random-information .image-illustration .second-illustration figure figcaption {
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.random-information .image-illustration .third-illustration figure figcaption {
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.random-information .image-illustration .fourth-illustration figure figcaption {
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* section quote-text style */
+
+.quote-text {
+    background: var(--quote-background);
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-text .quote  {
+    color: var(--quote-text-color);
+    font-size: var(--quote-text-font);
+    font-weight: var(--quote-text-weight);
+    font-style: var(--quote-text-weight);
+}
+
+/* section sign-up style */
+
+.sign-up {
+    background: var(--button-color-action-background);
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-up div {
+    width: 500px;
+    margin-left: 20%;
+}
+
+.sign-up h3 {
+    color: var(--link-secondary-text-color);
+    font-size: var(--link-secondary-font);
+    
+}
+
+.sign-up p {
+    color: var(--link-secondary-text-color);
+}
+
+.sign-up button {
+    background: var(--link-secondary-text-color);
+    color: var(--button-color-action-background);
+    border-radius: 10%;
+    border: var(--button-color-action-background);
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: 20%;
+}
+/* footer style */
+
+footer {
+    background: var(--dark-background-nav-footer);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--link-secondary-text-color);
+}
